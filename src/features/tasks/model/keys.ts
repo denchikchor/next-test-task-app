@@ -1,4 +1,4 @@
 export const tasksKeys = {
-  all: ["tasks"] as const,
-  list: () => [...tasksKeys.all, "list"] as const,
+  all: ['tasks'] as const,
+  list: () => [...tasksKeys.all, 'list'] as const,
 };
