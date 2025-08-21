@@ -15,7 +15,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="border-border-soft fixed inset-y-0 left-0 z-40 hidden h-screen w-[240px] flex-col justify-between border-r bg-white md:flex">
+    <aside className="fixed inset-y-0 left-0 z-40 hidden h-screen w-[240px] flex-col justify-between bg-white md:flex">
       <div>
         <div className="flex items-center gap-3 px-6 pt-6 pb-4">
           <div className="bg-brand-orange grid size-8 place-items-center rounded-full text-[18px] font-semibold text-white">
@@ -37,9 +37,7 @@ export default function Sidebar() {
                 )}
               >
                 <IconComponent className="size-5" />
-                <span className={cn('text-[16px]', active ? 'font-medium' : 'font-normal')}>
-                  {label}
-                </span>
+                <span className="text-[16px] font-light">{label}</span>
               </Link>
             );
           })}
@@ -50,8 +48,8 @@ export default function Sidebar() {
         <div className="flex items-center gap-3">
           <div className="bg-avatar size-8 rounded-full border" />
           <div>
-            <div className="text-foreground text-[14px] font-medium">User R.</div>
-            <div className="text-nav-muted text-[12px]">test-mail@email.com</div>
+            <div className="text-[12px] font-medium text-black">User R.</div>
+            <div className="text-nav-muted text-[10px]">test-mail@email.com</div>
           </div>
         </div>
       </div>

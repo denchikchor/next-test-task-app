@@ -1,0 +1,11 @@
+import { z } from 'zod';
+
+export const SettingsSchema = z.object({
+  name: z.string().min(1, 'Name is required'),
+  password: z
+    .string()
+    .min(4, 'Password must be at least 4 characters')
+    .max(12, 'Password must be at most 12 characters'),
+});
+
+export type SettingsFormValues = z.infer<typeof SettingsSchema>;

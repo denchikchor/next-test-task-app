@@ -29,14 +29,14 @@ export function TaskCard({ title, description, date, className }: Props) {
         </button>
       </div>
 
-      <p className="text-brand-grey line-clamp-3 text-[14px] leading-6">{description}</p>
+      <p className="text-brand-grey line-clamp-3 text-[14px] leading-6 font-light">{description}</p>
 
       <div className="mt-auto flex items-center justify-between pt-4">
         <span
           className={cn(
             'inline-flex items-center gap-1.5',
             'h-[28px] min-w-[84px] rounded-[4px] px-3',
-            'bg-brand-green text-[13px] font-medium text-white',
+            'bg-brand-green text-[12px] font-light text-white',
           )}
         >
           <Clock3 size={16} />

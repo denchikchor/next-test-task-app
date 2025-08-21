@@ -9,11 +9,15 @@
   --color-brand-grey: #12121299;
   --color-brand-green: #64c882;
   --color-brand-orange: #ff9f24;
+  --color-button-red: #d23d3d;
+  --color-title-dark: #121212;
+  --color-title-form: #666666;
   --color-nav-muted: #aaaaaa;
   --color-border-soft: #f1f1f1;
   --color-bullets: #aaaaaa;
-  --color-avatar: #d9d9d9;
+  --color-avatar: #c4c4c4;
   --color-card-border: #eaeaea;
+  --color-form-border: #cccccc;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-mono: var(--font-geist-mono);
