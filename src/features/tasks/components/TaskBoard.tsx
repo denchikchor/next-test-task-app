@@ -1,7 +1,6 @@
 import { Task } from '../model/types';
 import { TaskCard } from './TaskCard';
 import { formatDayMonthISO, formatHeaderDate } from '@/shared/lib/format';
-import { cn } from '@/lib/utils';
 
 type ColumnDef = {
   key: 'to-do' | 'in-progress' | 'review' | 'completed';
