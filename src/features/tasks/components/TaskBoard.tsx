@@ -1,9 +1,9 @@
-import { Task } from '../model/types';
+import { Task, TaskStatus } from '../model/types';
 import { TaskCard } from './TaskCard';
 import { formatDayMonthISO, formatHeaderDate } from '@/shared/lib/format';
 
 type ColumnDef = {
-  key: 'to-do' | 'in-progress' | 'review' | 'completed';
+  key: TaskStatus;
   title: string;
 };
 
