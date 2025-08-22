@@ -13,8 +13,8 @@ export default function SettingsPageClient() {
       <div className="min-h-screen bg-slate-50 lg:mr-[340px]">
         <div className="px-6 py-8">
           <header>
-            <h1 className="text-title-dark text-[20px] font-medium">Settings</h1>
-            <p className="mt-1 text-[14px]">
+            <h1 className="text-title-dark text-xl font-medium">Settings</h1>
+            <p className="mt-1 text-sm">
               <span className="text-brand-green">{dow}</span>
               <span className="text-slate-400">, {date}</span>
             </p>

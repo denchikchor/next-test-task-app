@@ -22,8 +22,8 @@ export function TaskBoard({ tasks }: { tasks: Task[] }) {
     <div className="min-h-screen bg-slate-50">
       <div className="mx-auto max-w-[1200px] px-6 pb-10">
         <header className="py-6">
-          <h1 className="text-title-dark text-[20px] font-medium">My Tasks</h1>
-          <p className="mt-1 text-[14px]">
+          <h1 className="text-title-dark text-xl font-medium">My Tasks</h1>
+          <p className="mt-1 text-sm">
             <span className="text-brand-green">{dow}</span>
             <span className="text-slate-400">, {date}</span>
           </p>
@@ -34,7 +34,7 @@ export function TaskBoard({ tasks }: { tasks: Task[] }) {
             const list = byStatus(col.key);
             return (
               <section key={col.key}>
-                <h2 className="text-title-dark mb-3 text-[16px] font-semibold">
+                <h2 className="text-title-dark mb-3 text-base font-semibold">
                   {col.title} <span>({list.length})</span>
                 </h2>
 

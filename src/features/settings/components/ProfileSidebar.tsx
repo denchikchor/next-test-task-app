@@ -14,8 +14,8 @@ export function ProfileSidebar({ progress, name, role }: Props) {
   return (
     <div className="flex h-full flex-col">
       <div className="mb-4">
-        <h3 className="text-[20px] font-semibold">My Profile</h3>
-        <p className="mt-1 text-[14px]">
+        <h3 className="text-xl font-semibold">My Profile</h3>
+        <p className="mt-1 text-sm">
           <span className="text-brand-green">{pct}%</span>{' '}
           <span className="text-brand-green">completed your profile</span>
         </p>
@@ -33,8 +33,8 @@ export function ProfileSidebar({ progress, name, role }: Props) {
         </CircularProgress>
 
         <div className="mt-4 text-center">
-          <div className="text-[16px] font-medium">{name}</div>
-          <div className="text-nav-muted text-[14px]">{role}</div>
+          <div className="text-base font-medium">{name}</div>
+          <div className="text-nav-muted text-sm">{role}</div>
         </div>
       </div>
 

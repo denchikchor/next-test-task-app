@@ -2,7 +2,7 @@
 
 import { Card } from '@/components/ui/card';
 import { MoreHorizontal, Clock3 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn } from '@/shared/lib/utils';
 
 type Props = {
   title: string;
@@ -21,7 +21,7 @@ export function TaskCard({ title, description, date, className }: Props) {
       )}
     >
       <div className="flex items-start justify-between">
-        <h3 className="text-[16px] leading-none font-medium text-slate-900 first-letter:uppercase">
+        <h3 className="text-base leading-none font-medium text-slate-900 first-letter:uppercase">
           {title}
         </h3>
         <button aria-label="more" className="text-bullets hover:opacity-80">
@@ -29,14 +29,14 @@ export function TaskCard({ title, description, date, className }: Props) {
         </button>
       </div>
 
-      <p className="text-brand-grey line-clamp-3 text-[14px] leading-6 font-light">{description}</p>
+      <p className="text-brand-grey line-clamp-3 text-sm leading-6 font-light">{description}</p>
 
       <div className="mt-auto flex items-center justify-between pt-4">
         <span
           className={cn(
             'inline-flex items-center gap-1.5',
             'h-[28px] min-w-[84px] rounded-[4px] px-3',
-            'bg-brand-green text-[12px] font-light text-white',
+            'bg-brand-green text-xs font-light text-white',
           )}
         >
           <Clock3 size={16} />

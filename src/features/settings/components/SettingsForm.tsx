@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { cn } from '@/lib/utils';
+import { cn } from '@/shared/lib/utils';
 import { SettingsFormValues, SettingsSchema } from '../schema';
 
 export function SettingsForm() {
@@ -28,7 +28,7 @@ export function SettingsForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-3">
       <div className="space-y-2">
-        <label className="text-title-form text-[12px] font-medium">Name</label>
+        <label className="text-title-form text-xs font-medium">Name</label>
         <input
           {...register('name')}
           onFocus={() => {
@@ -40,25 +40,25 @@ export function SettingsForm() {
           placeholder="User Random"
           className={cn(
             'border-form-border h-12 w-full rounded-[8px] border bg-white px-4',
-            'focus:ring-brand-green text-[14px] outline-none placeholder:text-black focus:ring-2',
+            'focus:ring-brand-green text-sm outline-none placeholder:text-black focus:ring-2',
           )}
         />
-        {errors.name && <p className="text-[12px] text-red-500">{errors.name.message}</p>}
+        {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
       </div>
 
       <div className="space-y-2">
-        <label className="text-title-form text-[12px] font-medium">Password</label>
+        <label className="text-title-form text-xs font-medium">Password</label>
         <input
           type="password"
           {...register('password')}
           placeholder="Enter password"
           className={cn(
             'border-form-border h-12 w-full rounded-[8px] border bg-white px-4',
-            'focus:ring-brand-green placeholder:text-title-form text-[14px] outline-none focus:ring-2',
+            'focus:ring-brand-green placeholder:text-title-form text-sm outline-none focus:ring-2',
           )}
         />
-        <p className="text-title-form text-[12px]">Your password is between 4 and 12 characters</p>
-        {errors.password && <p className="text-[12px] text-red-500">{errors.password.message}</p>}
+        <p className="text-title-form text-xs">Your password is between 4 and 12 characters</p>
+        {errors.password && <p className="text-xs text-red-500">{errors.password.message}</p>}
       </div>
 
       <div className="flex justify-end pt-2">

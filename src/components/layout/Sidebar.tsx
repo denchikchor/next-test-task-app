@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { cn } from '@/lib/utils';
+import { cn } from '@/shared/lib/utils';
 import SettingsIcon from '../icons/SettingsIcon';
 import DashboardIcon from '../icons/DashboardIcon';
 
@@ -18,10 +18,10 @@ export default function Sidebar() {
     <aside className="fixed inset-y-0 left-0 z-40 hidden h-screen w-[240px] flex-col justify-between bg-white md:flex">
       <div>
         <div className="flex items-center gap-3 px-6 pt-6 pb-4">
-          <div className="bg-brand-orange grid size-8 place-items-center rounded-full text-[18px] font-semibold text-white">
+          <div className="bg-brand-orange grid size-8 place-items-center rounded-full text-lg font-semibold text-white">
             C
           </div>
-          <div className="text-[20px] font-semibold tracking-wide">TESTAPP</div>
+          <div className="text-xl font-semibold tracking-wide">TESTAPP</div>
         </div>
 
         <nav className="mt-6 space-y-2 px-6">
@@ -37,7 +37,7 @@ export default function Sidebar() {
                 )}
               >
                 <IconComponent className="size-5" />
-                <span className="text-[16px] font-light">{label}</span>
+                <span className="text-base font-light">{label}</span>
               </Link>
             );
           })}
@@ -48,7 +48,7 @@ export default function Sidebar() {
         <div className="flex items-center gap-3">
           <div className="bg-avatar size-8 rounded-full border" />
           <div>
-            <div className="text-[12px] font-medium text-black">User R.</div>
+            <div className="text-xs font-medium text-black">User R.</div>
             <div className="text-nav-muted text-[10px]">test-mail@email.com</div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { Card } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
-import { cn } from '@/lib/utils';
+import { cn } from '@/shared/lib/utils';
 
 export function TaskCardSkeleton({ className }: { className?: string }) {
   return (
