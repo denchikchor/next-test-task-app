@@ -51,7 +51,7 @@ export function TaskBoard({ tasks }: { tasks: Task[] }) {
                   {Array.from({ length: Math.max(0, 3 - list.length) }).map((_, i) => (
                     <div
                       key={`placeholder-${i}`}
-                      className="border-cardBorder hidden h-[216px] w-full rounded-[8px] border-2 border-dashed bg-white/40 md:block"
+                      className="border-cardBorder hidden h-[216px] w-full rounded-lg border-2 border-dashed bg-white/40 md:block"
                     />
                   ))}
                 </div>

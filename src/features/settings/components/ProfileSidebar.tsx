@@ -1,6 +1,7 @@
 'use client';
 
-import CircularProgress from '@/components/ui/CircularProgress';
+import { Button } from '@/shared/components/ui/button';
+import CircularProgress from '@/shared/components/ui/CircularProgress';
 
 type Props = {
   progress: number;
@@ -42,9 +43,9 @@ export function ProfileSidebar({ progress, name, role }: Props) {
 
       <div className="flex-1" />
 
-      <button className="bg-button-red h-10 w-full rounded-[4px] font-medium text-white">
+      <Button className="w-full" variant="logout" size="lg">
         Logout
-      </button>
+      </Button>
     </div>
   );
 }

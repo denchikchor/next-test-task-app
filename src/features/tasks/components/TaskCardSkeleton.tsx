@@ -1,7 +1,7 @@
 'use client';
 
-import { Card } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Card } from '@/shared/components/ui/card';
+import { Skeleton } from '@/shared/components/ui/skeleton';
 import { cn } from '@/shared/lib/utils';
 
 export function TaskCardSkeleton({ className }: { className?: string }) {
@@ -9,7 +9,7 @@ export function TaskCardSkeleton({ className }: { className?: string }) {
     <Card
       aria-hidden
       className={cn(
-        'h-[216px] w-full rounded-[8px] border-0 bg-white shadow-none',
+        'h-[216px] w-full rounded-lg border-0 bg-white shadow-none',
         'flex flex-col p-4',
         className,
       )}
@@ -30,7 +30,7 @@ export function TaskCardSkeleton({ className }: { className?: string }) {
       </div>
 
       <div className="mt-auto flex items-center justify-between pt-4">
-        <Skeleton className="h-[28px] w-[84px] rounded-[4px]" />
+        <Skeleton className="h-[28px] w-[84px] rounded-sm" />
         <div className="flex -space-x-2">
           <Skeleton className="h-8 w-8 rounded-full border border-white" />
           <Skeleton className="h-8 w-8 rounded-full border border-white" />

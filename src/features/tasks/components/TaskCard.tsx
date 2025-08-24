@@ -1,8 +1,9 @@
 'use client';
 
-import { Card } from '@/components/ui/card';
+import { Card } from '@/shared/components/ui/card';
 import { MoreHorizontal, Clock3 } from 'lucide-react';
 import { cn } from '@/shared/lib/utils';
+import { Button } from '@/shared/components/ui/button';
 
 type Props = {
   title: string;
@@ -15,7 +16,7 @@ export function TaskCard({ title, description, date, className }: Props) {
   return (
     <Card
       className={cn(
-        'h-[216px] w-full rounded-[8px] border-0 bg-white shadow-none',
+        'h-[216px] w-full rounded-lg border-0 bg-white shadow-none',
         'flex flex-col p-4',
         className,
       )}
@@ -24,9 +25,14 @@ export function TaskCard({ title, description, date, className }: Props) {
         <h3 className="text-base leading-none font-medium text-slate-900 first-letter:uppercase">
           {title}
         </h3>
-        <button aria-label="more" className="text-bullets hover:opacity-80">
+        <Button
+          aria-label="more"
+          variant="ghost"
+          size="icon"
+          className="text-bullets hover:opacity-80"
+        >
           <MoreHorizontal size={20} />
-        </button>
+        </Button>
       </div>
 
       <p className="text-brand-grey line-clamp-3 text-sm leading-6 font-light">{description}</p>
@@ -35,7 +41,7 @@ export function TaskCard({ title, description, date, className }: Props) {
         <span
           className={cn(
             'inline-flex items-center gap-1.5',
-            'h-[28px] min-w-[84px] rounded-[4px] px-3',
+            'h-[28px] min-w-[84px] rounded-sm px-3',
             'bg-brand-green text-xs font-light text-white',
           )}
         >

@@ -1,7 +1,7 @@
 'use client';
 
 import { TaskCardSkeleton } from './TaskCardSkeleton';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Skeleton } from '@/shared/components/ui/skeleton';
 
 const COLUMNS = ['To do', 'In progress', 'Review', 'Completed'] as const;
 
