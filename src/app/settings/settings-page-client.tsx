@@ -1,6 +1,6 @@
 'use client';
 
-import RightSidebar from '@/components/layout/RightSidebar';
+import RightSidebar from '@/shared/components/layout/RightSidebar';
 import { SettingsForm } from '@/features/settings/components/SettingsForm';
 import { formatHeaderDate } from '@/shared/lib/format';
 

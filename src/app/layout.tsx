@@ -1,4 +1,4 @@
-import Sidebar from '@/components/layout/Sidebar';
+import Sidebar from '@/shared/components/layout/Sidebar';
 import './globals.css';
 import Providers from './providers';
 import { Poppins } from 'next/font/google';
